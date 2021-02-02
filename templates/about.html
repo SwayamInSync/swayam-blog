@@ -1,0 +1,39 @@
+{% include "header.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static', filename='img/about.jpeg')}})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About Me</h1>
+            <span class="subheading"><br>
+              <img src="{{ url_for('static', filename='img/profile.jpg') }}" class="img-fluid rounded-circle custom">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Hey reader,</p>
+        <p>My name is <strong>Swayam</strong>, I'm a <strong>programmer and blogger</strong> based in India.</p>
+        <p><strong><em>"Being an animal lover makes life somewhat easy."</em></strong></p>
+        <p>
+          Currently I'm pursuing my Bachelor's degree from India,<br> 🎶Pop music attracts me,<br>
+          Passionate about coding and writing📖. </p>
+        <p>
+          "I can do this all day..!"<br>by:- <strong><em>Steve Rogers</em></strong>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  {% include "footer.html" %}
